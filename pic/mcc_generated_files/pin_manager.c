@@ -72,8 +72,8 @@ void PIN_MANAGER_Initialize(void)
     /**
     ANSELx registers
     */
-    ANSELC = 0x3C;
-    ANSELB = 0x0F;
+    ANSELC = 0x0C;
+    ANSELB = 0x00;
     ANSELA = 0x3F;
 
     /**
@@ -114,12 +114,12 @@ void PIN_MANAGER_Initialize(void)
     
 	
     RB6PPS = 0x03;   //RB6->CLC3:CLC3OUT;    
-    CLCIN0PPS = 0x17;   //RC7->CLC3:CLCIN0;    
+    CLCIN0PPS = 0x16;   //RC6->CLC3:CLCIN0;    
     RB7PPS = 0x04;   //RB7->CLC4:CLC4OUT;    
-    CLCIN3PPS = 0x0D;   //RB5->CLC4:CLCIN3;    
+    CLCIN3PPS = 0x0C;   //RB4->CLC4:CLCIN3;    
     RC4PPS = 0x02;   //RC4->CLC2:CLC2OUT;    
-    CLCIN2PPS = 0x0C;   //RB4->CLC4:CLCIN2;    
-    CLCIN1PPS = 0x16;   //RC6->CLC3:CLCIN1;    
+    CLCIN2PPS = 0x0D;   //RB5->CLC4:CLCIN2;    
+    CLCIN1PPS = 0x17;   //RC7->CLC3:CLCIN1;    
     RC5PPS = 0x01;   //RC5->CLC1:CLC1OUT;    
 }
   

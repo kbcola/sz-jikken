@@ -59,12 +59,12 @@ void CLC2_Initialize(void)
 {
     // Set the CLC2 to the options selected in the User Interface
 
-    // LC2G1POL not_inverted; LC2G2POL not_inverted; LC2G3POL not_inverted; LC2G4POL not_inverted; LC2POL not_inverted; 
-    CLC2POL = 0x00;
+    // LC2G1POL not_inverted; LC2G2POL not_inverted; LC2G3POL not_inverted; LC2G4POL not_inverted; LC2POL inverted; 
+    CLC2POL = 0x80;
     // LC2D1S CLCIN1 (CLCIN1PPS); 
     CLC2SEL0 = 0x01;
-    // LC2D2S PWM4_OUT; 
-    CLC2SEL1 = 0x1D;
+    // LC2D2S PWM3_OUT; 
+    CLC2SEL1 = 0x1C;
     // LC2D3S CLCIN0 (CLCIN0PPS); 
     CLC2SEL2 = 0x00;
     // LC2D4S CLCIN0 (CLCIN0PPS); 
