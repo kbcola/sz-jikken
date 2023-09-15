@@ -28,9 +28,15 @@ void main(void) {
   //INTERRUPT_GlobalInterruptEnable();
   //INTERRUPT_PeripheralInterruptEnable();
 
-  rmtr(1000);
-  lmtr(1000);
-
   while(1) {
+    rmtr(1000);
+    lmtr(1000);
+
+    __delay_ms(2000);
+
+    rmtr(-1000);
+    lmtr(-1000);
+
+    __delay_ms(2000);
   }
 }
